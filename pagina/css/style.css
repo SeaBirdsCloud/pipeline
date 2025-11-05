@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Roboto, Microsoft YaHei, Sans-serif;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    max-width: 100%;
+    width: 10%;
+    min-width: 130px;
+    height: 100vh;
+    text-align: center;
+    background-color: #4d4d4d;
+    color: #fff;
+    overflow: auto; /* Adicionado para evitar transbordamento */
+}
+
+header img {
+    margin-top: 10%;
+    width: 80%;
+    height: auto;
+}
+
+header p {
+    font-size: 20px;
+}
+
+header a {
+    color: #fff;
+}
+
+header ul {
+    padding: 1cm 0;
+}
+
+header li {
+    padding: 9px 0;
+    border-top: solid 1px #777;
+}
+
+header li:hover {
+    padding: 9px 0;
+    background-color: #666666;
+}
+
+main {
+    background-color: #e8e8e8;
+    padding: 15px 0;
+    height: calc(100vh - 0px); /* Ajustado para garantir que fique dentro de 100vh */
+    margin-left: 10%;
+    overflow: hidden; /* Adicionado para evitar transbordamento */
+}
+
+.container {
+    width: 95%;
+    height: auto; /* Ajustado para auto para que se ajuste ao conteúdo */
+    max-height: calc(100vh - 15px); /* Limite a altura da container ao espaço restante */
+    margin-left: auto;
+    margin-right: auto;
+    color: #303030;
+    -webkit-text-stroke: 0.2px black;
+    overflow-y: auto; /* Adicionado para permitir rolagem se o conteúdo for muito longo */
+}
+
+#pesquisa {
+    cursor: pointer;
+    padding-left: 35px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 99%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#pesquisa:hover,
+#pesquisa:focus {
+    border-color: #999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#lista-contas {
+    list-style-type: none;
+    padding: 0;
+    max-height: calc(75vh);
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.conta {
+    cursor: pointer;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    max-height: 10cm;
+    text-align: center;
+}
+
+.conta:hover {
+    background-color: #e0e0e0;
+}
+
+.conta-selecionada {
+    background-color: #d0e6ff;
+    border-color: #007bff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.botoes {
+    margin-top: 10px;
+}
+
+.botoes button {
+    background-color: #b90504;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botoes button:hover {
+    background-color: #990100;
+    transform: translateY(-2px);
+}
+
+.botoes button:active {
+    transform: translateY(1px);
+}

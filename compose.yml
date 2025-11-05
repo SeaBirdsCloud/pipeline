@@ -1,0 +1,9 @@
+# Versão do compose
+version: "1.0"
+services:
+  sso-page:
+    image: ghcr.io/lucasperolive/pipeline:main
+    container_name: teste-apache
+    # Porta para acesso
+    ports:
+    - "80:80"
